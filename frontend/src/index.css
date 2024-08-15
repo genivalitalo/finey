@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+#root {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  place-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  overflow-x: hidden;
 }
 
-#root {
-  display: grid;
-  grid-template-columns: 256px 1fr;
-  grid-template-rows: 60px 1fr;
-  grid-template-areas: 
-  "nav header",
-  "nav main";
-}
 

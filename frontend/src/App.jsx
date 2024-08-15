@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import { Button } from '@mui/material'
-import Navbar from './components/NavBar/Navbar'
+import { useState } from "react";
+import "./App.css";
+import MenuLateral from "./components/MenuLateral/MenuLateral";
+import Content from "./components/Content/Content";
 
-
-function App() {
-  const [count, setCount] = useState(0)
+function App(children) {
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1 className='text-3x1 font-bold'>Olá Mundo</h1>
-      <Navbar />
-    </>
-  )
+    <div className="flex">
+      <MenuLateral />
+      <Content />
+    </div>
+  );
 }
 
-export default App
+export default App;
